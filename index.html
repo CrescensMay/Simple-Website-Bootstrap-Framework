@@ -40,7 +40,7 @@
           <h1 class="display-3">Full Stack Conf</h1>
           <p class="lead">A One-day Conference About All Things JavaScript</p>
           <div class="btn-group mt-2" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-primary btn-lg">Register Now</button>
+            <button type="button" class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#register">Register Now</button>
             <a class="btn btn-secondary btn-lg" href="#speaker">See Speaker</a>
           </div>
         </div>
@@ -193,7 +193,7 @@
       </ul>
 
       <!--  callout buttons-->
-      <button type="button" class="btn btn-outline-primary btn-lg my-3">Don't miss out, Register now</button>
+      <button type="button" class="btn btn-outline-primary btn-lg my-3"  data-toggle="modal" data-target="#register">Don't miss out, Register now</button>
       <!--  callout buttons-->
 
       <!-- signup form -->
@@ -245,9 +245,31 @@
         <div class="col-md-5 text-md-right">
           <small>&copy;<script>document.write(new Date().getFullYear())</script> Crescens.K &amp; SmartSoft</small>
         </div>
-      </div>
-      <!-- footer -->
+      </div>  <!-- footer -->
     </div><!--/.Container-->
+
+    <!--  Modal Form-->
+    <div id="register" class="modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Register for Full Stack Conf</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Form goes here</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--  Modal Form-->
+
 
     <!-- jQuery first, then bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
